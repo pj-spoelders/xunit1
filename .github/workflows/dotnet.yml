@@ -16,7 +16,8 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 5.x
+        dotnet-version: 5.0.101
+    # https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/releases-index.json  
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
